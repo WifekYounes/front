@@ -1,0 +1,82 @@
+
+
+
+
+
+<h4 class="display-4" style="text-align: center;">Assign a space to my employees</h4>
+<hr>
+
+
+<br>
+
+
+
+<div class="dx-fieldset">
+  <div class="dx-fieldset-header">Choose my employee :</div>
+  <div class="dx-field">
+    <dx-lookup
+    [dataSource]="subusers"
+    displayExpr="surname"
+    [(value)]="cin"
+    valueExpr="cin">
+    <dxo-drop-down-options [showTitle]="false"></dxo-drop-down-options>
+</dx-lookup>
+  </div>
+</div>
+
+<div class="dx-fieldset">
+  <div class="dx-fieldset-header">Choose the space :</div>
+  <div class="dx-field">
+    <dx-lookup
+    [dataSource]="spaces"
+    displayExpr="name"
+    [(value)]="idSpace"
+    valueExpr="idSpace"
+  >
+    <dxo-drop-down-options [showTitle]="false"></dxo-drop-down-options>
+</dx-lookup>
+  </div>
+</div>
+<dx-button
+icon="check"
+type="success"
+text="Assign"
+(onClick)="save()"
+id="button"
+>
+</dx-button>
+
+<br><br>
+
+<dx-data-grid id="gridContainer"
+[showBorders]="true"
+[dataSource]="listud"
+[repaintChangesOnly]="true"
+
+[rowAlternationEnabled]="true"
+keyExpr="sus_key">
+
+
+
+
+
+
+<dxi-column dataField="sus_key.cin" caption="CIN" [width]="150">
+
+</dxi-column>
+
+
+
+<dxi-column dataField="sus_key.idSpace" caption="Space"   [width]="150">
+
+
+</dxi-column>
+
+
+
+
+
+
+
+
+</dx-data-grid>
