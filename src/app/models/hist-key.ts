@@ -1,4 +1,4 @@
 export class HistKey {
-    reference:string;
-    date:Date;
+    idRt:number;
+    idalert:number;
 }

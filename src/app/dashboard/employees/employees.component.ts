@@ -9,8 +9,8 @@ import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
 import { exportDataGrid } from 'devextreme/excel_exporter';
-import * as ExcelJS from "exceljs/dist/exceljs.min.js";
-import * as saveAs from "file-saver";
+import * as ExcelJS from 'exceljs/dist/exceljs.min.js';
+import saveAs from 'file-saver';
   @Component({
     selector: 'app-employees',
     templateUrl: './employees.component.html',

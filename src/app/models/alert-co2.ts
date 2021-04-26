@@ -1,6 +1,4 @@
-
-import { AlertKey } from "./alert-key";
 export class AlertCo2 {
-    ak:AlertKey;
+    idAlert:number;
     message:string;
 }

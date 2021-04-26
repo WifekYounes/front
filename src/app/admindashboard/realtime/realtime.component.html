@@ -1,0 +1,13 @@
+
+<div class="dx-fieldset">
+  <div class="dx-fieldset-header">Choose a device :</div>
+  <div class="dx-field">
+    <dx-lookup
+    [dataSource]="devices"
+    displayExpr="name"
+    [(value)]="reference"
+    valueExpr="reference">
+    <dxo-drop-down-options [showTitle]="false"></dxo-drop-down-options>
+
+</dx-lookup>
+  </div>
